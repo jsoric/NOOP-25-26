@@ -4,10 +4,12 @@ public class CompareTWO <T extends Comparable<T>>{
 
     private final T fst;
     private final T snd;
+    private final T trd;
 
-    public CompareTWO(T fst, T snd) {
+    public CompareTWO(T fst, T snd, T trd) {
         this.fst = fst;
         this.snd = snd;
+        this.trd = trd;
     }
 /*
     public void setFst(T newfst){
