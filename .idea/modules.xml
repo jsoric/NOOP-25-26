@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ADAPTER/ADAPTER.iml" filepath="$PROJECT_DIR$/ADAPTER/ADAPTER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/COMMAND/COMMAND.iml" filepath="$PROJECT_DIR$/COMMAND/COMMAND.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DECORATOR/DECORATOR.iml" filepath="$PROJECT_DIR$/DECORATOR/DECORATOR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FACADE/FACADE.iml" filepath="$PROJECT_DIR$/FACADE/FACADE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GENERICS/GENERICS.iml" filepath="$PROJECT_DIR$/GENERICS/GENERICS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NOOP-25-26.iml" filepath="$PROJECT_DIR$/.idea/NOOP-25-26.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OBSERVER/OBSERVER.iml" filepath="$PROJECT_DIR$/OBSERVER/OBSERVER.iml" />
+      <module fileurl="file://$PROJECT_DIR$/STRATEGY/STRATEGY.iml" filepath="$PROJECT_DIR$/STRATEGY/STRATEGY.iml" />
+    </modules>
+  </component>
+</project>
