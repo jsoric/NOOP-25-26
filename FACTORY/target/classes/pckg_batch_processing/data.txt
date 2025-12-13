@@ -1,0 +1,15 @@
+10.12.2025. [INFO] System boot sequence initiated.
+10.12.2025. [INFO] Network interface established. IP: 192.168.1.100
+10.12.2025. [WARNING] Low disk space detected on drive D:. Current free space: 5%.
+10.12.2025. [INFO] User "admin" logged in successfully.
+10.12.2025. [ERROR] Database connection failed. Timeout reached.
+10.12.2025. [INFO] Application service started on port 8080.
+10.12.2025. [WARNING] External device connection interrupted and restored.
+10.12.2025. [INFO] Backup process started. Target: Remote server.
+10.12.2025. [ERROR] File "config.xml" not found in primary directory. Using default settings.
+10.12.2025. [INFO] CPU temperature stabilized at 55°C.
+10.12.2025. [WARNING] Attempted unauthorized access from unknown source. Blocked by firewall.
+10.12.2025. [INFO] Backup process completed successfully. Duration: 15 minutes.
+10.12.2025. [INFO] Scheduled task "Cleanup" running.
+10.12.2025. [ERROR] Memory leak detected in core process 4587. Restart required.
+10.12.2025. [INFO] System gracefully shutting down.

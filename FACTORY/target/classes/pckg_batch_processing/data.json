@@ -1,0 +1,71 @@
+{
+  "courses": [
+    {
+      "course_name": "MATH",
+      "students": [
+        {
+          "student_id": "M1001",
+          "name": "Alice Cooper"
+        },
+        {
+          "student_id": "M1002",
+          "name": "Bob Dylan"
+        },
+        {
+          "student_id": "M1003",
+          "name": "Charlie Brown"
+        },
+        {
+          "student_id": "M1004",
+          "name": "Diana Ross"
+        }
+      ]
+    },
+    {
+      "course_name": "CS",
+      "students": [
+        {
+          "student_id": "C2005",
+          "name": "Ethan Hunt"
+        },
+        {
+          "student_id": "C2006",
+          "name": "Fiona Glenanne"
+        },
+        {
+          "student_id": "C2007",
+          "name": "George Lucas"
+        },
+        {
+          "student_id": "C2008",
+          "name": "Hannah Montana"
+        }
+      ]
+    },
+    {
+      "course_name": "UNIX_OS",
+      "students": [
+        {
+          "student_id": "U3009",
+          "name": "Isaac Newton"
+        },
+        {
+          "student_id": "U3010",
+          "name": "Jasmine Ali"
+        },
+        {
+          "student_id": "U3011",
+          "name": "Kevin Flynn"
+        },
+        {
+          "student_id": "U3012",
+          "name": "Laura Croft"
+        },
+        {
+          "student_id": "U3013",
+          "name": "Mark Zuckerberg"
+        }
+      ]
+    }
+  ]
+}
