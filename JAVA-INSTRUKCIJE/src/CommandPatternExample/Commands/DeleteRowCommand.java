@@ -1,12 +1,14 @@
-package commands;
+package CommandPatternExample.Commands;
 
 import javax.swing.table.DefaultTableModel;
 
-public class DeleteRowCommand implements Command{
+public class DeleteRowCommand implements Command {
 
     private DefaultTableModel model;
     private int selectedRow = 0;
     private Object[] rowData;
+
+    private DefaultTableModel undoModel;
 
     public DeleteRowCommand(DefaultTableModel model, int selectedRow){
         this.model = model;
@@ -15,13 +17,15 @@ public class DeleteRowCommand implements Command{
 
     @Override
     public void execute() {
+        undoModel = this.model;
 
+        // save history
         rowData = new Object[model.getColumnCount()];
-        for(int i = 0; i < model.getColumnCount() ; i++){
-            rowData[i] = model.getValueAt(selectedRow, i);
+        for (int c = 0; c < model.getColumnCount(); c++) {
+            rowData[c] = model.getValueAt(selectedRow, c);
         }
 
-         model.removeRow(selectedRow);
+        model.removeRow(selectedRow);
     }
 
     @Override

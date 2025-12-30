@@ -4,9 +4,11 @@ import commands.RedoCommand;
 import commands.UndoCommand;
 
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 public class TableFrame extends JFrame {
 
@@ -103,8 +105,8 @@ public class TableFrame extends JFrame {
 
         /* ================= TABLE ================= */
 
-        String csvPath = "E://Github_NOOP_25-26//NOOP-25-26//SVASTARIJA//src//data/housing.csv";
-        DefaultTableModel model = CsvTableWorker.loadCSV(csvPath, this);
+        //String csvPath = "E://Github_NOOP_25-26//NOOP-25-26//SVASTARIJA//src//data/housing.csv";
+        DefaultTableModel model = new DefaultTableModel();
 
         table = new JTable(model);
         table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -117,7 +119,10 @@ public class TableFrame extends JFrame {
 
         add(scrollPane, BorderLayout.CENTER);
 
-        deleteRowMenuItem.addActionListener(a ->{
+        jMenuItemOpenFile.addActionListener(e -> openCsv());
+
+
+        deleteRowMenuItem.addActionListener(a -> {
             commandPatternHandler.execute(new DeleteRowCommand(model, table.getSelectedRow()));
         });
 
@@ -134,10 +139,29 @@ public class TableFrame extends JFrame {
         );
 
 
-
-
-
-
         setVisible(true);
     }
+
+    private void openCsv() {
+
+        JFileChooser chooser = new JFileChooser(); // opens Documents by default
+
+        chooser.setFileFilter(
+                new FileNameExtensionFilter("CSV Files (*.csv)", "csv")
+        );
+
+        int result = chooser.showOpenDialog(this);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File file = chooser.getSelectedFile();
+
+            DefaultTableModel model =
+                    CsvTableWorker.loadCSV(file.getAbsolutePath(), this);
+
+            table.setModel(model);
+        }
+    }
+
+
+
 }
