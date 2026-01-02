@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/FACADE/FACADE.iml" filepath="$PROJECT_DIR$/FACADE/FACADE.iml" />
       <module fileurl="file://$PROJECT_DIR$/FACTORY/FACTORY.iml" filepath="$PROJECT_DIR$/FACTORY/FACTORY.iml" />
       <module fileurl="file://$PROJECT_DIR$/GENERICS/GENERICS.iml" filepath="$PROJECT_DIR$/GENERICS/GENERICS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVA_SND_TASK/JAVA_SND_TASK.iml" filepath="$PROJECT_DIR$/JAVA_SND_TASK/JAVA_SND_TASK.iml" />
       <module fileurl="file://$PROJECT_DIR$/OBSERVER/OBSERVER.iml" filepath="$PROJECT_DIR$/OBSERVER/OBSERVER.iml" />
       <module fileurl="file://$PROJECT_DIR$/STRATEGY/STRATEGY.iml" filepath="$PROJECT_DIR$/STRATEGY/STRATEGY.iml" />
     </modules>
